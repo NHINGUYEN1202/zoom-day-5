@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body class="form-body">
+    <div class="form-wrapper">
+        <h1 class="form-title">Register</h1>
+        <form action="" autocomplete="off">
+            <div class="form-group">
+                <label for="avatar">
+                    <img src="../images/img-avatar-placeholder.png" alt="avatar placeholder" class="avatar-placeholder">
+                </label>
+                <input type="file" id="avatar" name="avatar" accept="image/*" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Display name</label>
+                <input type="text" id="name" name="name" placeholder="Display name" required spellcheck="false">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required spellcheck="false">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Phone" required spellcheck="false">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+            </div>
+            <div class="form-group">
+                <label>Gender</label>
+                <input type="radio" name="gender" id="male" value="male" checked>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="other" value="other">
+                <label for="other">Other</label>
+            </div>  
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" placeholder="Province/City" required spellcheck="false">
+            </div>
+            <div class="form-group">
+                <label>Communication Preferences</label>
+                <div class="checkbox-group-wrapper">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="newsletter" name="preferences" value="newsletter" checked>
+                        <label for="newsletter">Subscribe to Newsletter</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="promotional" name="preferences" value="promotional">
+                        <label for="promotional">Receive Promotional Emails</label>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="product-updates" name="preferences" value="product-updates">
+                        <label for="product-updates">Get Product Updates</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
